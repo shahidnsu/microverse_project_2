@@ -8,10 +8,14 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1 id = "title">
-      Donation suervey 
-    </h1>
-    <p id="description"> We are doing a suvery for our winter donation project.please help us and fill up the survey  </p>
+    <div class="container">
+       <header>
+          <h1 id = "title">
+            Donation survey 
+          </h1>
+          <p id="description"> We are doing a suvery for our winter donation project.please help us and fill up the survey  </p>
+       </header>
+    </div>
      <form action="" id="survey-form">
        <label for="text" id="name-label">Name</label>
        <input type="text" name="text" id="name" placeholder="Enter name" required>
@@ -20,20 +24,36 @@
        <label for="number" id="number-label">Number</label>
        <input type="number" name="number" id="number" min="1" max="20" placeholder="Enter number">
        <select name="select" id="dropdown">
+         <option disabled selected value>select From dropdown</option>
          <option name="option">Challenges</option>
          <option name="options">Projects</option>
          <option name="option">Community</option>
          <option name="option">Open source</option>
        </select>
-       <input type="radio" name="radio" value="Definitely">
-       <input type="radio" name="radio" value="Maybe">
-       <input type="radio" name="radio" value="Not Sure">
-      <input type="checkbox" name="checkbox" value="front-end projects">
-      <input type="checkbox" name="checkbox" value="back-end project">
-      <input type="checkbox" name="checkbox"value="Data Visualization" >
+       <label>
+         Definitely
+        <input type="radio" name="radio" value="Definitely">
+       </label>
+       <label>
+         Maybe
+        <input type="radio" name="radio" value="Maybe">
+       </label>
+       <label>Not Sure
+        <input type="radio" name="radio" value="Not Sure">
+       </label>
+       <label>
+        <input type="checkbox" name="checkbox" value="front-end projects">Front-end Projects
+       </label>
+       <label>
+        <input type="checkbox" name="checkbox" value="back-end project">
+        back-end Projects
+       </label>
+       <label>
+         <input type="checkbox" name="checkbox"value="Data Visualization" >
+         Data Visualization
+       </label>
        <textarea name="textarea" cols="30" rows="10"></textarea>
        <button id="submit">Submit</button>
-       
 
      </form>
     <!--
