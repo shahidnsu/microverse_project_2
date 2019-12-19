@@ -12,7 +12,25 @@
       Donation suervey 
     </h1>
     <p id="description"> We are doing a suvery for our winter donation project.please help us and fill up the survey  </p>
+     <form action="" id="survey-form">
+       <label for="text" id="name-label">Name</label>
+       <input type="text" name="text" id="name" placeholder="Enter name" required>
+       <label for="email" id="email-label">Email</label>
+       <input type="email" name="email" id="email" placeholder="Enter email" required>
+       <label for="number" id="number-label">Number</label>
+       <input type="number" name="number" id="number" min="1" max="20" placeholder="Enter number">
+       <select name="select" id="dropdown">
+         <option value="Student" name="option"></option>
+         <option value="Full Job" name="options"></option>
+       </select>
+       <input type="radio" name="selct-radio" value="Definitely">Definiterly
+       <input type="radio" name="radio" id="Maybe">
+        <input type="checkbox" name="checkbox" value>
+       <textarea name="textarea" cols="30" rows="10"></textarea>
+       <button id="submit">Submit</button>
+       
 
+     </form>
     <!--
 
     Hello Camper!
